@@ -40,7 +40,7 @@ nav {
           justify-content: space-between;
           li {
             display: flex;
-          justify-content: space-between;
+            justify-content: space-between;
             color: black;
           }
 
@@ -52,15 +52,20 @@ nav {
 
             i {
               font-size: 20px;
+              transition: transform 0.2 ease-in-out;
+            }
+            i:hover {
+              transform: rotate(180deg);
             }
           }
-
         }
 
         li:hover {
           text-decoration: underline;
         }
-
+        .forhover:hover {
+          transform: rotate(180deg);
+        }
         .nav_dropdown :hover {
           display: block;
         }
@@ -77,12 +82,14 @@ nav {
           display: block;
         }
       }
-      .nav_bar{
-        ul{.fornoneresponsiv{
-          display: none;
-        }}
-        
+      .nav_bar {
+        ul {
+          .fornoneresponsiv {
+            display: none;
+          }
+        }
       }
     }
   }
 }
+
